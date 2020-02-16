@@ -13,10 +13,10 @@ int max(int, int);
 
 int main() // Driver code
 {
-    printf("Type question number here: ");
+    printf("Type question number here: "); // Prompt for question number
     int x;
     scanf("%d", &x);
-    switch (x)
+    switch (x) // Switch-case for question selection
     {
     case 1:
         {
@@ -214,13 +214,13 @@ void questionFour(int x, int y) // Question 4: Integer comparison
 void questionFive(int x, int y, int z) // Question 5: Three number calculator
 {
     printf("Sum is: %d\n", x + y + z); // Evaluates and prints sum
-    printf("Average is: %lf\n",(double)(x + y + z) / 3); // Evaluates and prints average. Note: Average value casted to double
-    printf("Product is: %d\n", x *y * z); //
-    printf("Smallest is: %d\n", min(min(x, y), z));
-    printf("Largest is: %d\n", max(max(x, y), z));
+    printf("Average is: %lf\n",(double)(x + y + z) / 3); // Evaluates and prints average. Note: Average value casted to double for accurate averages.
+    printf("Product is: %d\n", x *y * z); // Evaluates product
+    printf("Smallest is: %d\n", min(min(x, y), z)); // Evaluates maximum 
+    printf("Largest is: %d\n", max(max(x, y), z)); // Evaluates minimum
 }
 
-int min(int x, int y)
+int min(int x, int y) // Minimum of two integers. Used in question 5.
 {
     if (x > y)
     {
@@ -232,7 +232,7 @@ int min(int x, int y)
     }
 }
 
-int max(int x, int y)
+int max(int x, int y) // Minimum of two integers. Used in question 5.
 {
     if (x > y)
     {
