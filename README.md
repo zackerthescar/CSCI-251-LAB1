@@ -1,0 +1,2 @@
+# CSCI-251-LAB1
+CSCI251 Lab Exercise 1
